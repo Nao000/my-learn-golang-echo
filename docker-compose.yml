@@ -1,0 +1,18 @@
+version: '3.2'
+services:
+  web:
+    container_name: ubuntu2004
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+      - "1323:1323"
+    volumes:
+      - ./ubuntu:/home/
+    tty: true
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
