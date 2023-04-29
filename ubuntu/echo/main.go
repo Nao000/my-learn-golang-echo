@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/labstack/echo/v4"
-	"echo/controller"
 	"echo/core"
+	"echo/router"
 )
 
 func main() {
@@ -13,8 +13,8 @@ func main() {
 	// template を使う
 	e.Renderer = core.GetTemplate()
 
-	e.GET("/", controller.Index)
-	e.GET("/hello", controller.Hello)
+	// ルーティング
+	router.SetRouter(e)
 
 	e.Logger.Fatal(e.Start(":80"))
 }
