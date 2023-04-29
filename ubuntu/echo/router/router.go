@@ -3,6 +3,7 @@ package router
 import (
 	"github.com/labstack/echo/v4"
 	"echo/controller"
+	controller_sub "echo/controller/sub"
 )
 
 func SetRouter(e *echo.Echo) {
@@ -10,4 +11,5 @@ func SetRouter(e *echo.Echo) {
 
 	e.GET("/", controller.Index)
 	e.GET("/hello", controller.Hello)
+	e.GET("/hello/sub", controller_sub.Hello)
 }
