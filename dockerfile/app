@@ -1,0 +1,14 @@
+FROM ubuntu:20.04
+
+WORKDIR /home/
+
+COPY ./go1.19.4.linux-amd64.tar.gz /home/
+
+RUN \
+    apt update && \
+    apt -y upgrade && \
+    apt install build-essential wget sudo curl make vim systemctl -y && \
+    # wget https://go.dev/dl/go1.19.4.linux-amd64.tar.gz && \
+    rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.4.linux-amd64.tar.gz
+
+ENV PATH $PATH:/usr/local/go/bin

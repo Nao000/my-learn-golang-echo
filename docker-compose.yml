@@ -1,8 +1,10 @@
 version: '3.2'
 services:
   web:
-    container_name: ubuntu2004
-    build: .
+    container_name: app
+    build:
+      context: ./dockerfile
+      dockerfile: app
     ports:
       - "80:80"
       - "443:443"
@@ -11,8 +13,13 @@ services:
       - ./ubuntu:/home/
     tty: true
   db:
-    image: mysql:latest
+    container_name: db
+    build:
+      context: ./dockerfile
+      dockerfile: db
     ports:
       - "3306:3306"
+    volumes:
+      - ./database:/home/
     environment:
       MYSQL_ROOT_PASSWORD: password

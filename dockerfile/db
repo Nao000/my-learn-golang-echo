@@ -1,0 +1,4 @@
+FROM mysql:8.0
+
+# ↓↓未検証
+# RUN mysql < /home/test_db/employees.sql -h localhost -u root -ppassword
