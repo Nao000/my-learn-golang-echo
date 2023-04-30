@@ -12,4 +12,5 @@ func SetRouter(e *echo.Echo) {
 	e.GET("/", controller.Index)
 	e.GET("/hello", controller.Hello)
 	e.GET("/hello/sub", controller_sub.Hello)
+	e.GET("/hello/sub2", controller_sub.Hello2)
 }
