@@ -11,3 +11,7 @@ Go言語 Echo で Template を表示するのが難しそうだったので、�
 Next.js が SSG, SSR, CSR をページごとに選択できるらしく、途中で選択ができるっぽくて良さそうなので選びました。
 
 なので Next.js も学び中です。
+
+Next.js プロジェクト例
+
+https://github.com/vercel/next.js/tree/canary/examples
