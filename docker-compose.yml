@@ -12,6 +12,9 @@ services:
     volumes:
       - ./ubuntu:/home/
     tty: true
+    environment:
+      DBUSER: root
+      DBPASS: password
   db:
     container_name: db
     build:
