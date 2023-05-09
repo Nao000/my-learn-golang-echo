@@ -15,3 +15,11 @@ Next.js が SSG, SSR, CSR をページごとに選択できるらしく、途中
 Next.js プロジェクト例
 
 https://github.com/vercel/next.js/tree/canary/examples
+
+## DB にテストデータを流し込むとき
+
+1. `docker exec -it db bash`
+2. `cd /home/test_db/`
+3. `mysql < employees.sql -h localhost -u root -ppassword`
+   1. 50秒ぐらいかかる
+4. おわり
