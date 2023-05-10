@@ -37,7 +37,7 @@ func getAllEmployees() ([]Employee, error) {
 
 	var employees []Employee
 
-	rows, err := db.Query("SELECT emp_no, first_name, last_name FROM employees WHERE emp_no < 20001", )
+	rows, err := db.Query("SELECT emp_no, first_name, last_name, hire_date FROM employees WHERE emp_no < 10051", )
 	if err != nil {
 		return nil, fmt.Errorf("getAllEmployees : %v", err)
 	}
@@ -49,7 +49,7 @@ func getAllEmployees() ([]Employee, error) {
 		var employee Employee
 
 		// スライスに入れるようの構造体に入れてる
-		if err := rows.Scan(&employee.Emp_no, &employee.First_name, &employee.Last_name); err != nil {
+		if err := rows.Scan(&employee.Emp_no, &employee.First_name, &employee.Last_name, &employee.Hire_date); err != nil {
 			return nil, fmt.Errorf("getAllEmployees : %v", err)
 		}
 

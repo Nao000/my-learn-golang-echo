@@ -7,3 +7,11 @@ export async function loadPosts() {
 
 	return await JSON.parse(dummy);
 }
+
+export async function loadEmployees() {
+
+	const res = await fetch('http://localhost/accessdb');
+	const data = await res.json();
+
+	return data;
+}
