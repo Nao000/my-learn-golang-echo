@@ -6,6 +6,8 @@ https://echo.labstack.com/guide/
 
 ## Next.js も学び中
 
+https://nextjs.org/docs
+
 Go言語 Echo で Template を表示するのが難しそうだったので、フロントエンドの何かを探しました。
 
 Next.js が SSG, SSR, CSR をページごとに選択できるらしく、途中で選択ができるっぽくて良さそうなので選びました。
