@@ -5,6 +5,7 @@ import (
 	"echo/controller"
 	controller_sub "echo/controller/sub"
 	controller_accessdb "echo/controller/accessdb"
+	controller_registerdb "echo/controller/registerdb"
 )
 
 func SetRouter(e *echo.Echo) {
@@ -15,4 +16,5 @@ func SetRouter(e *echo.Echo) {
 	e.GET("/hello/sub", controller_sub.Hello)
 	e.GET("/hello/sub2", controller_sub.Hello2)
 	e.GET("/accessdb", controller_accessdb.Index)
+	e.POST("/registerdb", controller_registerdb.Index)
 }
