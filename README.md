@@ -1,10 +1,19 @@
 # my-learn-golang-echo
-個人的なGo言語とEchoの勉強用リポジトリです
+
+Go言語とEchoとNext.jsの勉強用リポジトリです
+
+## Go
+
+https://go.dev/doc/
+
+特に Accessing databases を見る
+
+## Go Echo
 
 echo guide
 https://echo.labstack.com/guide/
 
-## Next.js も学び中
+## Next.js
 
 https://nextjs.org/docs
 
