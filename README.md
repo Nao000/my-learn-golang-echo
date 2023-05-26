@@ -34,3 +34,11 @@ https://github.com/vercel/next.js/tree/canary/examples
 3. `mysql < employees.sql -h localhost -u root -ppassword`
    1. 50秒ぐらいかかる
 4. おわり
+
+## SvelteKit がよさそうなので調べる
+
+Svelteで作られたフレームワークが SvelteKit らしい。
+
+https://svelte.jp/
+
+https://kit.svelte.jp/
